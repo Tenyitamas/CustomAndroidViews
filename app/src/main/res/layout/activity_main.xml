@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Subtitle"
+                android:text="Regisztráció"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/emailField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                app:startIconDrawable="@drawable/ic_baseline_email_24"
+                app:endIconMode="clear_text">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/passwordField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="Jelszó"
+                app:startIconDrawable="@drawable/ic_baseline_lock_24"
+                app:endIconMode="password_toggle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                style="@style/Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nem" />
+
+            <com.tenyitamas.customviews.view.ChoiceLayout
+                android:id="@+id/clFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:multiple="1"
+                app:dividerType="simple_divider">
+
+                <TextView
+                    style="@style/ChoiceOptionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Férfi" />
+
+                <TextView
+                    style="@style/ChoiceOptionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nő" />
+
+                <TextView
+                    style="@style/ChoiceOptionStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Egyéb" />
+
+            </com.tenyitamas.customviews.view.ChoiceLayout>
+
+
+            <TextView
+                style="@style/Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Válassz max 3-at"/>
+
+           <com.tenyitamas.customviews.view.ChoiceLayout
+               android:id="@+id/clSecond"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:multiple="3"
+               app:dividerType="double_divider">
+
+           </com.tenyitamas.customviews.view.ChoiceLayout>
+
+
+
+            <TextView
+                style="@style/Subtitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Válassz egy színt"/>
+
+            <Spinner
+                android:id="@+id/colorSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:spinnerMode="dialog"
+                android:background="@drawable/color_blob"
+                android:layout_marginEnd="20dp"/>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

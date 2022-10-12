@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/tenyi/Documents/Android/CustomViews/app/src/main/res/drawable/choice_dicider_double.xml" value="0.1" />
+        <entry key="..\:/Users/tenyi/Documents/Android/CustomViews/app/src/main/res/drawable/choicer_divider_simple.xml" value="0.1" />
+        <entry key="..\:/Users/tenyi/Documents/Android/CustomViews/app/src/main/res/drawable/color_blob.xml" value="0.1" />
+        <entry key="..\:/Users/tenyi/Documents/Android/CustomViews/app/src/main/res/drawable/selector_choice_item.xml" value="0.1" />
+        <entry key="..\:/Users/tenyi/Documents/Android/CustomViews/app/src/main/res/layout/activity_main.xml" value="0.34427083333333336" />
+        <entry key="..\:/Users/tenyi/Documents/Android/CustomViews/app/src/main/res/layout/color_spinner_bg.xml" value="0.3572916666666667" />
+        <entry key="..\:/Users/tenyi/Documents/Android/CustomViews/app/src/main/res/layout/color_spinner_item.xml" value="0.1" />
+      </map>
+    </option>
+  </component>
+</project>
